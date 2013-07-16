@@ -9,7 +9,7 @@ Without this configuration present, some functionality in the IDE may be limited
     <spring-data xmlns="http://www.netbeans.org/ns/spring-data/1">
         <config-files>
             <config-file>src/main/java/com/ugo/spring_test/registrationmgt/RegConfig.xml</config-file>
-            <config-file>src/main/java/resources/com/springinaction/springidol/spring-idol.xml</config-file>
+            <config-file>src/main/java/spring-idol.xml</config-file>
         </config-files>
         <config-file-groups/>
     </spring-data>
