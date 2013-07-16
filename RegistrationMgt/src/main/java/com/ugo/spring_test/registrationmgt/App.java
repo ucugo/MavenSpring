@@ -14,9 +14,9 @@ public class App
     public static void main( String[] args )throws PerformanceException
     {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("spring-idol.xml");
-        Performer performer = (Performer)ctx.getBean("poeticDuke");
+        Performer performer = (Performer)ctx.getBean("duke");
         performer.perform();
         
-        Stage stage = (Stage)ctx.getBean("theStage");
+        
     }
 }
