@@ -5,5 +5,19 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 ">
 
-    <bean id="duke" class="com.springinaction.springidol.Juggler"></bean>
+    <bean id="duke" class="com.springinaction.springidol.Juggler" init-method="init" destroy-method="endingPerformance">
+        <constructor-arg value="20"/>
+    </bean>
+    <bean id="duke2" class="com.springinaction.springidol.Juggler">
+        <constructor-arg value="5"/>
+    </bean>
+    
+    <bean name="poeticDuke" class="com.springinaction.springidol.PoeticJuggler">
+        <constructor-arg value="10"/>
+        <constructor-arg ref="sonnet29"/>
+    </bean>
+    <bean id="sonnet29" class="com.springinaction.springidol.Sonnet29"/>
+    
+    <bean id="stage" class="com.springinaction.springidol.Stage" factory-bean="stageBean"/>
+    <bean id="stageBean" class="com.springinaction.springidol.Stage"/>
 </beans>

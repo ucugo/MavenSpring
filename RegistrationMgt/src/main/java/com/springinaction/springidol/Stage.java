@@ -12,5 +12,9 @@ public class Stage {
   public static Stage getInstance() {
     return StageSingletonHolder.instance; //<co id="co_returnInstance"/>
   }
+  
+  public void stageName(){
+      System.out.println("The name of this stage is Stage 700");
+  }
 }
 //<end id="stage_java" />
